@@ -4,13 +4,13 @@ import axios from 'axios';
 
  const CakesAndPies = () => {
 
-    const [cakesAndPies, setCakesAndPies] = useState({ name: "", price: "" });
-    // const [cakesAndPies, setCakesAndPies] = useState([]);
+    const [cakeAndPie, setCakeAndPie] = useState({ name: "", price: "" });
+    const [cakesAndPies, setCakesAndPies] = useState([]);
     const [cakesAndPiesId, setCakesAndPiesId] = useState([]);
 
-    const getCakesAndPiesValues = (i) => {
+    const getCakeAndPieValue = (i) => {
         const {value, id} = i.target;
-        setCakesAndPies({...cakesAndPies, [id]: value});
+        setCakeAndPie({...cakeAndPie, [id]: value});
     };
 
     const getCakesAndPiesId = (i) => {
@@ -62,13 +62,23 @@ import axios from 'axios';
         grabCakesAndPies();
     }, []);
 
+    const cakesAndPiesTable = cakesAndPies.map((item, id) => {
+        return (
+            <tr id={id}>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>${item.price}</td>
+            </tr>
+        )
+    })
+
 
 
         return (
             <div>
                 <header>
                     <table>
-                        
+                        <tbody>{cakesAndPiesTable}</tbody>
                     </table>
                 </header>
             </div>
