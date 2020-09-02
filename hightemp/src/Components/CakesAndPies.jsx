@@ -11,7 +11,7 @@ import '../styles/css';
     async function grabCakesAndPies() {
         try {
             const res = await
-            axios.get('http://localhost:8080/high_temp/cakes_and_pies');
+            axios.get('jdbc:postgresql://localhost:5432/high_temp/cakes_and_pies');
             console.log(res.data);
         } catch(err) {
             console.error(err, err.message);
@@ -26,7 +26,11 @@ import '../styles/css';
 
         return (
             <div>
-                
+                <header>
+                    <table>
+                        
+                    </table>
+                </header>
             </div>
         )
     }

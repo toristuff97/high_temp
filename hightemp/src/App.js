@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -8,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* This is a bootflat test */}
-      <a class="btn btn-primary">Flat button</a>
+      <a class="btn btn-primary" href="#" >Flat button</a>
     </div>
   );
 }
