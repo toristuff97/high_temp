@@ -16,13 +16,19 @@ export default class Home extends Component {
                     <h3>Custom</h3>
                     </Link>
                     <h1>High Temp</h1>
+                    <Link to="/shop" style={{textDecoration: 'none', color: 'white'}}>
                     <h3>Shop</h3>
+                    </Link>
+                    <Link to="/wishlist" style={{textDecoration: 'none', color: 'white'}}>
                     <h3>Wishlist</h3>
+                    </Link>
                 </div>
                 <div className="intro">
                     <p style={{fontWeight: "bold", fontSize: 40, color: 'white'}}>We're best friends with your sweet tooth.</p>
                     <br></br>
+                    <Link to="/whatsnew" style={{textDecoration: 'none', color: 'white'}}>
                     <button id="newButton" >What's New</button>
+                    </Link>
                 </div>
                 <div className="socials">
                     <a href="http://www.instagram.com"><img className="icon" src={instagram} alt="Link to Instagram"/></a>
