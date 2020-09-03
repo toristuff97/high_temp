@@ -11,7 +11,7 @@ function App() {
       <Home />
       {/* This is a bootflat test */}
       {/* <a className="btn btn-primary" href="#" >Flat button</a> */}
-      <CakesAndPies/>
+      {/* <CakesAndPies/> */}
     </div>
   );
 }
