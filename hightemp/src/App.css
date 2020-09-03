@@ -58,6 +58,17 @@ p {
   outline: none;
 }
 
+.icon {
+  width: 3vw;
+}
+
+.socials {
+  position: relative;
+  top: 60vh;
+  right: 43vw;
+  border-spacing: 5vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
