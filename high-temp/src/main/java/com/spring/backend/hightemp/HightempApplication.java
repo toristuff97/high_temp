@@ -9,5 +9,5 @@ public class HightempApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HightempApplication.class, args);
 	}
-		
+
 }

@@ -31,7 +31,7 @@ import axios from 'axios';
     async function createCakesAndPies() {
         try {
             const res = await
-            axios.post("http://localhost:5432/high_temp/cakes)and_pies", cakesAndPies);
+            axios.post("http://localhost:5432/high_temp/cakes_and_pies", cakesAndPies);
             console.log(res.data);
             grabCakesAndPies();
         } catch(err) {

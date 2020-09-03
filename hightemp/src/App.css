@@ -28,6 +28,36 @@
   color: #61dafb;
 }
 
+.Home {
+  background-color: #F6BB42;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigation {
+  justify-content: space-evenly;
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+.intro {
+  position: relative;
+  top: 25vh;
+}
+
+#newButton {
+  border-color: #FFCE54;
+  font-family: 'Shrikhand';
+  font-size: 20pt;
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFCE54;
+  color: white;
+  outline: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
