@@ -42,6 +42,8 @@
 
 .navigation {
   justify-content: space-evenly;
+  /* position: relative;
+  top: 6vh; */
 }
 
 p {
@@ -70,7 +72,7 @@ p {
 
 .socials {
   position: relative;
-  top: 60vh;
+  top: 57vh;
   right: 43vw;
   border-spacing: 5vw;
 }
