@@ -12,7 +12,9 @@ export default class Shop extends Component {
         return (
             <div className="Shop">
                 <div className="navigation" style={{display: 'flex', fontFamily: 'Shrikhand', color: 'white'}}>
+                    <Link to="/" style={{textDecoration: 'none', color: 'white'}}>
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Home</h3>
+                    </Link>
                         <Link to="/custom" style={{textDecoration: 'none', color: 'white'}}>
                         <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Custom</h3>
                         </Link>
@@ -34,8 +36,10 @@ export default class Shop extends Component {
                     <p>Kits</p>
                 </div>
                 <div className="shopWindow">
+                    <Pastries/>
+                    <Candy/>
                     <CakesAndPies/>
-                    
+                    <Kits/>
                 </div>
             </div>
         )
