@@ -20,7 +20,7 @@ import axios from 'axios';
     async function grabPastries() {
         try {
             const res = await
-            axios.get('http://localhost:5432/high_temp/pastries');
+            axios.get('http://localhost:5432/hightemp/pastries');
             console.log(res.data);
             setPastries(res.data);
         } catch(err) {
@@ -31,7 +31,7 @@ import axios from 'axios';
     async function createPastries() {
         try {
             const res = await
-            axios.post("http://localhost:5432/high_temp/pastries", pastries);
+            axios.post("http://localhost:5432/hightemp/pastries", pastries);
             console.log(res.data);
             grabPastries();
         } catch(err) {
@@ -41,7 +41,7 @@ import axios from 'axios';
 
     async function deletePastries() {
         try {
-            const res = await axios.delete("http://localhost:5432/high_temp/pastries/${pastriesId}");
+            const res = await axios.delete("http://localhost:5432/hightemp/pastries/${pastriesId}");
             grabPastries();
             console.log(res.data);
         } catch(err) {

@@ -20,7 +20,7 @@ import axios from 'axios';
     async function grabCandy() {
         try {
             const res = await
-            axios.get('http://localhost:5432/high_temp/candy');
+            axios.get('http://localhost:5432/hightemp/candy');
             console.log(res.data);
             setCandy(res.data);
         } catch(err) {
@@ -31,7 +31,7 @@ import axios from 'axios';
     async function createCandies() {
         try {
             const res = await
-            axios.post("http://localhost:5432/high_temp/candy", candies);
+            axios.post("http://localhost:5432/hightemp/candy", candies);
             console.log(res.data);
             grabCandy();
         } catch(err) {
@@ -41,7 +41,7 @@ import axios from 'axios';
 
     async function deleteCandy() {
         try {
-            const res = await axios.delete("http://localhost:5432/high_temp/candy/${candiesId}");
+            const res = await axios.delete("http://localhost:5432/hightemp/candy/${candiesId}");
             grabCandy();
             console.log(res.data);
         } catch(err) {

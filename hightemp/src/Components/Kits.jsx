@@ -19,7 +19,7 @@ import axios from 'axios';
     async function grabKits() {
         try {
             const res = await
-            axios.get('http://localhost:5432/high_temp/kits');
+            axios.get('http://localhost:5432/hightemp/kits');
             console.log(res.data);
             setKits(res.data);
         } catch(err) {
@@ -30,7 +30,7 @@ import axios from 'axios';
     async function createKits() {
         try {
             const res = await
-            axios.post("http://localhost:5432/high_temp/kits", kits);
+            axios.post("http://localhost:5432/hightemp/kits", kits);
             console.log(res.data);
             grabKits();
         } catch(err) {
@@ -40,7 +40,7 @@ import axios from 'axios';
 
     async function deleteKits() {
         try {
-            const res = await axios.delete("http://localhost:5432/high_temp/kits/${kitsId}");
+            const res = await axios.delete("http://localhost:5432/hightemp/kits/${kitsId}");
             grabKits();
             console.log(res.data);
         } catch(err) {
