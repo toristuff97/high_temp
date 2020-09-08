@@ -4,7 +4,7 @@ import com.spring.backend.hightemp.models.Kits;
 import com.spring.backend.hightemp.respositories.KitsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @Service
 public class KitsImpl implements KitsService{
@@ -21,9 +21,9 @@ public class KitsImpl implements KitsService{
         return kitsRepo.save(kits);
     }
 
-    @Override
-    public HttpStatus deleteKitsById(Long id) {
-        kitsRepo.deleteById(id);
-        return HttpStatus.OK;
-    }
+//    @Override
+//    public HttpStatus deleteKitsById(Long id) {
+//        kitsRepo.deleteById(id);
+//        return HttpStatus.OK;
+//    }
 }

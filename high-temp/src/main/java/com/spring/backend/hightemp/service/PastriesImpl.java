@@ -4,7 +4,7 @@ import com.spring.backend.hightemp.models.Pastries;
 import com.spring.backend.hightemp.respositories.PastriesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @Service
 public class PastriesImpl implements PastriesService{
@@ -21,9 +21,9 @@ public class PastriesImpl implements PastriesService{
         return pastriesRepo.save(pastries);
     }
 
-    @Override
-    public HttpStatus deletePastriesById(Long id) {
-        pastriesRepo.deleteById(id);
-        return HttpStatus.OK;
-    }
+//    @Override
+//    public HttpStatus deletePastriesById(Long id) {
+//        pastriesRepo.deleteById(id);
+//        return HttpStatus.OK;
+//    }
 }

@@ -4,7 +4,7 @@ import com.spring.backend.hightemp.models.CakesAndPies;
 import com.spring.backend.hightemp.respositories.CakesAndPiesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @Service
 public class CakesAndPiesImpl implements CakesAndPiesService{
@@ -22,10 +22,10 @@ public class CakesAndPiesImpl implements CakesAndPiesService{
         return cakesAndPiesRepo.save(cakesAndPies);
     }
 
-    @Override
-    public HttpStatus deleteCakesAndPiesById(Long id) {
-        cakesAndPiesRepo.deleteById(id);
-        return HttpStatus.OK;
-    }
+//    @Override
+//    public HttpStatus deleteCakesAndPiesById(Long id) {
+//        cakesAndPiesRepo.deleteById(id);
+//        return HttpStatus.OK;
+//    }
 
 }

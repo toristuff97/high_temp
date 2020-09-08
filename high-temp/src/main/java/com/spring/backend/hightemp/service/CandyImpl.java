@@ -4,7 +4,7 @@ import com.spring.backend.hightemp.models.Candy;
 import com.spring.backend.hightemp.respositories.CandyRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @Service
 public class CandyImpl implements CandyService{
@@ -21,9 +21,9 @@ public class CandyImpl implements CandyService{
         return candyRepo.save(candy);
     }
 
-        @Override
-    public HttpStatus deleteCandyById(Long id) {
-        candyRepo.deleteById(id);
-        return HttpStatus.OK;
-    }
+//        @Override
+//    public HttpStatus deleteCandyById(Long id) {
+//        candyRepo.deleteById(id);
+//        return HttpStatus.OK;
+//    }
 }

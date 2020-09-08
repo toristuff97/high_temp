@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import com.spring.backend.hightemp.models.Candy;
 import com.spring.backend.hightemp.service.CandyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @RestController
 @CrossOrigin
@@ -18,15 +18,13 @@ public class CandyController {
         return candyService.listCandy();
     }
 
-//    @GetMapping("/hightemp/candy")
-
     @PostMapping("/candy")
     public Candy createCandy(@RequestBody Candy Candy){
         return candyService.createCandy(Candy);
     }
 
-    @DeleteMapping("candy/{id}")
-    public HttpStatus deleteCandyById(@PathVariable Long id) {
-        return candyService.deleteCandyById(id);
-    }
+//    @DeleteMapping("candy/{id}")
+//    public HttpStatus deleteCandyById(@PathVariable Long id) {
+//        return candyService.deleteCandyById(id);
+//    }
 }

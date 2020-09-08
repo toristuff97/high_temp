@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import com.spring.backend.hightemp.models.Pastries;
 import com.spring.backend.hightemp.service.PastriesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+//import org.springframework.http.HttpStatus;
 
 @RestController
 @CrossOrigin
@@ -18,14 +18,13 @@ public class PastriesController {
         return pastriesService.listPastries();
     }
 
-//    @GetMapping("/hightemp/pastries")
     @PostMapping
     public Pastries createPastries(@RequestBody Pastries Pastries){
         return pastriesService.createPastries(Pastries);
     }
 
-    @DeleteMapping("pastries/{id}")
-    public HttpStatus deletePastriesById(@PathVariable Long id) {
-        return pastriesService.deletePastriesById(id);
-    }
+//    @DeleteMapping("pastries/{id}")
+//    public HttpStatus deletePastriesById(@PathVariable Long id) {
+//        return pastriesService.deletePastriesById(id);
+//    }
 }
