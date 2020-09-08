@@ -55,7 +55,7 @@ import axios from 'axios';
     //     try {
     //       const response = await axios.post(
     //         "jdbc:postgresql://localhost:5432/high_temp/cakes_and_pies",
-    //         nailArtAccessory
+    //         cakesAndPies
     //       );
 
     useEffect(() => {
