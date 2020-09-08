@@ -13,10 +13,11 @@ public class CakesAndPiesController {
     @Autowired
     private CakesAndPiesService cakesAndPiesService;
 
-    @GetMapping("/high_temp/cakes_and_pies")
+    @GetMapping
     public Iterable<CakesAndPies> listCakesAndPies() {
         return cakesAndPiesService.listCakesAndPies();
     }
+// @GetMapping("/hightemp/cakes_and_pies")
 
     @PostMapping
     public CakesAndPies createCakesAndPies(@RequestBody CakesAndPies CakesAndPies){

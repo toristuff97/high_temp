@@ -13,12 +13,14 @@ public class CandyController {
     @Autowired
     private CandyService candyService;
 
-    @GetMapping("/high_temp/candy")
+    @GetMapping
     public Iterable<Candy> listCandy() {
         return candyService.listCandy();
     }
 
-    @PostMapping
+//    @GetMapping("/hightemp/candy")
+
+    @PostMapping("/candy")
     public Candy createCandy(@RequestBody Candy Candy){
         return candyService.createCandy(Candy);
     }

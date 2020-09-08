@@ -13,11 +13,12 @@ public class PastriesController {
     @Autowired
     private PastriesService pastriesService;
 
-    @GetMapping("/high_temp/pastries")
+    @GetMapping
     public Iterable<Pastries> listPastries() {
         return pastriesService.listPastries();
     }
 
+//    @GetMapping("/hightemp/pastries")
     @PostMapping
     public Pastries createPastries(@RequestBody Pastries Pastries){
         return pastriesService.createPastries(Pastries);

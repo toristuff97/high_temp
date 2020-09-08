@@ -13,11 +13,12 @@ public class KitsController {
     @Autowired
     private KitsService kitsService;
 
-    @GetMapping("/high_temp/kits")
+    @GetMapping
     public Iterable<Kits> listKits() {
         return kitsService.listKits();
     }
 
+//    @GetMapping("/hightemp/kits")
     @PostMapping
     public Kits createKits(@RequestBody Kits Kits){
         return kitsService.createKits(Kits);
