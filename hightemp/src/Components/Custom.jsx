@@ -75,7 +75,7 @@ export default class Custom extends Component {
                 <div className="customHead">
                     <h4 style={{fontWeight: 'bolder', color: 'white', fontSize: '20pt', fontFamily: 'Montserrat'}}>Custom Order Form</h4>
                 </div>
-                <div className="customForm">
+                <div className="customForm" id="customForm">
                     <div className="datePick">
                         <p style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Date desired</p>
                         <DatePicker onChange={this.onChange} value={this.state.date}/>
@@ -84,6 +84,18 @@ export default class Custom extends Component {
                         <Dropdown placeholder='Type of Dessert' fluid selection options={dessertOptions} style={{width: '10vw'}}/>
                         <br/> <br/>
                         <Dropdown placeholder='Budget' fluid selection options={budgetOptions} style={{width: '10vw'}}/>
+                    </div>
+                    <div className="custInfo">
+                        <label for="fname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>First Name</label> <br/>
+                        <input type="text" name="fname" id="fname"></input> <br/>
+                        <label for="lname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Last Name</label> <br/>
+                        <input type="text" name="lname" id="lname"></input> <br/>
+                        <label for="email" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Email</label> <br/>
+                        <input type="text" name="email" id="email"></input> <br/> <br/>
+                        <input type="text" name="desc" id="desc" placeholder="Description of what you would like (flavors, decoration, any allergy disclosures, etc.)"></input>
+                    </div>
+                    <div className="submitForm">
+                        <button type="submit" form="customForm" formMethod="post">Submit</button>
                     </div>
                 </div>
             </div>

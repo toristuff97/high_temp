@@ -104,6 +104,10 @@ p {
   left: 20vw;
 }
 
+.custInfo {
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
