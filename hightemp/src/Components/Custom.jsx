@@ -71,13 +71,18 @@ export default class Custom extends Component {
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Wishlist</h3>
                     </Link>
                 </div>
+                <br/>
+                <div className="customHead">
+                    <h4 style={{fontWeight: 'bolder', color: 'white', fontSize: '20pt', fontFamily: 'Montserrat'}}>Custom Order Form</h4>
+                </div>
                 <div className="customForm">
                     <div className="datePick">
-                        <p style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Date requested</p>
+                        <p style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Date desired</p>
                         <DatePicker onChange={this.onChange} value={this.state.date}/>
                     </div>
                     <div className="specs">
                         <Dropdown placeholder='Type of Dessert' fluid selection options={dessertOptions} style={{width: '10vw'}}/>
+                        <br/> <br/>
                         <Dropdown placeholder='Budget' fluid selection options={budgetOptions} style={{width: '10vw'}}/>
                     </div>
                 </div>

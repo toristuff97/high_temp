@@ -92,6 +92,18 @@ p {
   top: 13vh;
 }
 
+.datePick {
+  position: absolute;
+  left: 20vw;
+  top: 25vh;
+}
+
+.specs {
+  position: absolute;
+  top: 40vh;
+  left: 20vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
