@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import DatePicker from 'react-date-picker';
-// import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css'
 import { Dropdown } from 'semantic-ui-react';
 
 const dessertOptions = [
@@ -57,16 +57,18 @@ export default class Custom extends Component {
         return (
             <div className="Custom">
                 <div className="navigation" style={{display: 'flex', fontFamily: 'Shrikhand', color: 'white'}}>
-                    <h3>Home</h3>
-                    <Link to="/custom" style={{textDecoration: 'none', color: 'white'}}>
-                    <h3>Custom</h3>
+                    <Link to="/" style={{textDecoration: 'none', color: 'white'}}>
+                    <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Home</h3>
                     </Link>
-                    <h1>High Temp</h1>
+                    <Link to="/custom" style={{textDecoration: 'none', color: 'white'}}>
+                    <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Custom</h3>
+                    </Link>
+                    <h1 style={{fontSize: '40pt', fontFamily: 'Shrikhand'}}>High Temp</h1>
                     <Link to="/shop" style={{textDecoration: 'none', color: 'white'}}>
-                    <h3>Shop</h3>
+                    <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Shop</h3>
                     </Link>
                     <Link to="/wishlist" style={{textDecoration: 'none', color: 'white'}}>
-                    <h3>Wishlist</h3>
+                    <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Wishlist</h3>
                     </Link>
                 </div>
                 <div className="customForm">
