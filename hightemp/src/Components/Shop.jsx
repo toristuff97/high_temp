@@ -22,8 +22,11 @@ export default class Shop extends Component {
                 </div>
                 <div className="category">
                     <p>Pastries</p>
+                    <br/>
                     <p>Candy</p>
+                    <br/>
                     <p>Cakes & Pies</p>
+                    <br/>
                     <p>Kits</p>
                 </div>
             </div>

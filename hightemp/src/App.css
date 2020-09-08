@@ -40,6 +40,12 @@
   height: 100vh;
 }
 
+.Shop {
+  background-color: #F6BB42;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navigation {
   justify-content: space-evenly;
   /* position: relative;
@@ -75,6 +81,15 @@ p {
   top: 57vh;
   right: 43vw;
   border-spacing: 5vw;
+}
+
+.category {
+  font-weight: bolder;
+  color: white;
+  font-size: 15pt;
+  position: relative;
+  right: 40vw;
+  top: 13vh;
 }
 
 @keyframes App-logo-spin {
