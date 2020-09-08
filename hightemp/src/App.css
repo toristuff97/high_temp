@@ -105,7 +105,13 @@ p {
 }
 
 .custInfo {
-  
+  position: absolute;
+  left: 50vw;
+  top: 25vh;
+}
+
+.desc {
+  justify-content: start;
 }
 
 @keyframes App-logo-spin {

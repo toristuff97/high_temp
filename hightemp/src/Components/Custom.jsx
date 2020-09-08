@@ -86,13 +86,14 @@ export default class Custom extends Component {
                         <Dropdown placeholder='Budget' fluid selection options={budgetOptions} style={{width: '10vw'}}/>
                     </div>
                     <div className="custInfo">
-                        <label for="fname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>First Name</label> <br/>
-                        <input type="text" name="fname" id="fname"></input> <br/>
-                        <label for="lname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Last Name</label> <br/>
-                        <input type="text" name="lname" id="lname"></input> <br/>
-                        <label for="email" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt'}}>Email</label> <br/>
-                        <input type="text" name="email" id="email"></input> <br/> <br/>
-                        <input type="text" name="desc" id="desc" placeholder="Description of what you would like (flavors, decoration, any allergy disclosures, etc.)"></input>
+                        <label for="fname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt', fontFamily:'Montserrat'}}>First Name</label> <br/> 
+                        <input type="text" name="fname" id="fname"></input> <br/> <br/>
+                        <label for="lname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt', fontFamily:'Montserrat'}}>Last Name</label> <br/> 
+                        <input type="text" name="lname" id="lname"></input> <br/> <br/>
+                        <label for="email" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt', fontFamily:'Montserrat'}}>Email</label> <br/>
+                        <input type="text" name="email" id="email"></input> <br/> <br/> <br/>
+                        <label for="desc" style={{fontWeight: 'bolder', color: 'white', fontSize: '15pt', fontFamily:'Montserrat'}}>Description of what you would like</label>
+                        <input type="text" name="desc" id="desc" placeholder="Flavors, decoration, any allergy disclosures, etc." style={{width: '25vw', height: '20vh'}}></input>
                     </div>
                     <div className="submitForm">
                         <button type="submit" form="customForm" formMethod="post">Submit</button>
