@@ -3,14 +3,14 @@ import axios from 'axios';
 
  const Pastries = () => {
 
-    const [pastries, setPastries] = useState({ name: "", price: "" });
+    const [pastry, setPastry] = useState({ name: "", price: "" });
     const [pastries, setPastries] = useState([]);
     const [pastriesId, setPastriesId] = useState([]);
 
 
     const getPastriesValue = (i) => {
         const {value, id} = i.target;
-        setPastries({...pastries, [id]: value});
+        setPastry({...pastry, [id]: value});
     };
 
     const getPastriesId = (i) => {

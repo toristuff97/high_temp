@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,
     Route, 
     Link } from 'react-router-dom';
+import CakesAndPies from './CakesAndPies'
+import Pastries from './Pastries'
+import Kits from './Kits'
+import Candy from './Candy'
 
 export default class Shop extends Component {
     render() {
@@ -28,6 +32,10 @@ export default class Shop extends Component {
                     <p>Cakes & Pies</p>
                     <br/>
                     <p>Kits</p>
+                </div>
+                <div className="shopWindow">
+                    <CakesAndPies/>
+                    
                 </div>
             </div>
         )

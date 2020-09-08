@@ -4,8 +4,8 @@ import axios from 'axios';
  const Candy = () => {
 
     const [candy, setCandy] = useState({ name: "", price: "" });
-    const [candy, setCandy] = useState([]);
-    const [candyId, setCandyId] = useState([]);
+    const [candies, setCandies] = useState([]);
+    const [candiesId, setCandiesId] = useState([]);
 
 
     const getCandyValue = (i) => {
@@ -14,7 +14,7 @@ import axios from 'axios';
     };
 
     const getCandyId = (i) => {
-        setCandyId(i.target.value);
+        setCandiesId(i.target.value);
     }
 
     async function grabCandy() {
@@ -28,10 +28,10 @@ import axios from 'axios';
         }
     }
 
-    async function createCandy() {
+    async function createCandies() {
         try {
             const res = await
-            axios.post("http://localhost:5432/high_temp/candy", candy);
+            axios.post("http://localhost:5432/high_temp/candy", candies);
             console.log(res.data);
             grabCandy();
         } catch(err) {
@@ -41,7 +41,7 @@ import axios from 'axios';
 
     async function deleteCandy() {
         try {
-            const res = await axios.delete("http://localhost:5432/high_temp/candy/${candyId}");
+            const res = await axios.delete("http://localhost:5432/high_temp/candy/${candiesId}");
             grabCandy();
             console.log(res.data);
         } catch(err) {
@@ -55,14 +55,14 @@ import axios from 'axios';
     //     try {
     //       const response = await axios.post(
     //         "jdbc:postgresql://localhost:5432/high_temp/candy",
-    //         candy
+    //         candies
     //       );
 
     useEffect(() => {
         grabCandy();
     }, []);
 
-    const candyTable = candy.map((item, id) => {
+    const candiesTable = candies.map((item, id) => {
         return (
             <tr id={id}>
                 <td>{item.id}</td>
@@ -78,7 +78,7 @@ import axios from 'axios';
             <div>
                 <header>
                     <table>
-                        <tbody>{candyTable}</tbody>
+                        <tbody>{candiesTable}</tbody>
                     </table>
                 </header>
             </div>

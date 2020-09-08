@@ -3,13 +3,13 @@ import axios from 'axios';
 
  const Kits = () => {
 
-    const [kits, setKits] = useState({ name: "", price: "" });
+    const [kit, setKit] = useState({ name: "", price: "" });
     const [kits, setKits] = useState([]);
     const [kitsId, setKitsId] = useState([]);
 
     const getKitsValue = (i) => {
         const {value, id} = i.target;
-        setKits({...kits, [id]: value});
+        setKit({...kit, [id]: value});
     };
 
     const getKitsId = (i) => {
