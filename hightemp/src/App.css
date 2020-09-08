@@ -94,14 +94,14 @@ p {
 
 .datePick {
   position: absolute;
-  left: 20vw;
+  left: 25vw;
   top: 25vh;
 }
 
 .specs {
   position: absolute;
   top: 40vh;
-  left: 20vw;
+  left: 25vw;
 }
 
 .custInfo {
@@ -110,8 +110,18 @@ p {
   top: 25vh;
 }
 
-.desc {
-  justify-content: start;
+#submit {
+  position: absolute;
+  top: 75vh;
+  right: 46vw;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 15pt;
+  background-color: #FFCE54;
+  color: white;
+  font-weight: bold;
+  width: 7vw;
+  height: 7vh;
 }
 
 @keyframes App-logo-spin {

@@ -91,12 +91,12 @@ export default class Custom extends Component {
                         <label for="lname" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt', fontFamily:'Montserrat'}}>Last Name</label> <br/> 
                         <input type="text" name="lname" id="lname"></input> <br/> <br/>
                         <label for="email" style={{fontWeight: 'bolder', color: 'white', fontSize: '17pt', fontFamily:'Montserrat'}}>Email</label> <br/>
-                        <input type="text" name="email" id="email"></input> <br/> <br/> <br/>
+                        <input type="text" name="email" id="email" style={{width: '25vw'}}></input> <br/> <br/> <br/>
                         <label for="desc" style={{fontWeight: 'bolder', color: 'white', fontSize: '15pt', fontFamily:'Montserrat'}}>Description of what you would like</label>
-                        <input type="text" name="desc" id="desc" placeholder="Flavors, decoration, any allergy disclosures, etc." style={{width: '25vw', height: '20vh'}}></input>
+                        <input type="text" name="desc" id="desc" placeholder="Flavors, decoration, any allergy disclosures, etc." style={{width: '25vw', height: '10vh'}} required></input>
                     </div>
                     <div className="submitForm">
-                        <button type="submit" form="customForm" formMethod="post">Submit</button>
+                        <button type="submit" form="customForm" formMethod="post" id="submit">Submit</button>
                     </div>
                 </div>
             </div>
