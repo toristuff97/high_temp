@@ -48,8 +48,8 @@
 
 .navigation {
   justify-content: space-evenly;
-  /* position: relative;
-  top: 6vh; */
+  position: relative;
+  top: 6vh; 
 }
 
 p {

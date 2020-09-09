@@ -5,15 +5,15 @@ import axios from 'axios';
 
     const [kit, setKit] = useState({ name: "", price: "" });
     const [kits, setKits] = useState([]);
-    const [kitsId, setKitsId] = useState([]);
+    const [kitId, setKitId] = useState([]);
 
     const getKitsValue = (i) => {
         const {value, id} = i.target;
         setKit({...kit, [id]: value});
     };
 
-    const getKitsId = (i) => {
-        setKitsId(i.target.value);
+    const getKitId = (i) => {
+        setKitId(i.target.value);
     }
 
     async function grabKits() {
@@ -27,10 +27,10 @@ import axios from 'axios';
         }
     }
 
-    async function createKits() {
+    async function createKit() {
         try {
             const res = await
-            axios.post("http://localhost:5432/hightemp/kits", kits);
+            axios.post("http://localhost:5432/hightemp/kits", kit);
             console.log(res.data);
             grabKits();
         } catch(err) {
@@ -40,7 +40,7 @@ import axios from 'axios';
 
     async function deleteKits() {
         try {
-            const res = await axios.delete("http://localhost:5432/hightemp/kits/${kitsId}");
+            const res = await axios.delete(`http://localhost:5432/hightemp/kits/${kitId}`);
             grabKits();
             console.log(res.data);
         } catch(err) {
@@ -60,7 +60,7 @@ import axios from 'axios';
                 <td>${item.price}</td>
             </tr>
         )
-    })
+    });
 
         return (
             <div>
