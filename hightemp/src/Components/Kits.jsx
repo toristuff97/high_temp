@@ -48,15 +48,6 @@ import axios from 'axios';
         }
     }
 
-//jdbc:postgresql://localhost:5432/high_temp/cakes_and_pies
-    // async function createKits() {
-    //     console.log("creating cakes and pies yum")
-    //     try {
-    //       const response = await axios.post(
-    //         "jdbc:postgresql://localhost:5432/high_temp/kits",
-    //         kits
-    //       );
-
     useEffect(() => {
         grabKits();
     }, []);
@@ -70,8 +61,6 @@ import axios from 'axios';
             </tr>
         )
     })
-
-
 
         return (
             <div>
