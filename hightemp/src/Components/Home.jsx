@@ -11,7 +11,9 @@ export default class Home extends Component {
         return (
             <div className="Home">
                 <div className="navigation" style={{display: 'flex', fontFamily: 'Shrikhand', color: 'white'}}>
+                    <Link to="/">
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Home</h3>
+                    </Link>
                     <Link to="/custom" style={{textDecoration: 'none', color: 'white'}}>
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Custom</h3>
                     </Link>
@@ -19,7 +21,7 @@ export default class Home extends Component {
                     <Link to="/shop" style={{textDecoration: 'none', color: 'white'}}>
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Shop</h3>
                     </Link>
-                    <Link to="/wishlist" style={{textDecoration: 'none', color: 'white'}}>
+                    <Link to="/" style={{textDecoration: 'none', color: 'white'}}>
                     <h3 style={{fontSize: '25pt', fontFamily: 'Shrikhand'}}>Wishlist</h3>
                     </Link>
                 </div>
