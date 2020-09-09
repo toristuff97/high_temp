@@ -18,4 +18,4 @@ https://balsamiq.cloud/salalvn/pc0cdf7
 I was unable to get POST or GET requests to work correctly with my database. I will continue to work on this, I'd like it to be fully fleshed out in the future. 
 
 ## Live Site
-This site is deployed through Github.
+This site is deployed through Netlify and will continue to be updated there: https://keen-sammet-1c6b61.netlify.app
