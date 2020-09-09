@@ -19,8 +19,8 @@ public class CandyController {
     }
 
     @PostMapping("/candy")
-    public Candy createCandy(@RequestBody Candy Candy){
-        return candyService.createCandy(Candy);
+    public Candy createCandy(@RequestBody Candy newCandy){
+        return candyService.createCandy(newCandy);
     }
 
 //    @DeleteMapping("candy/{id}")

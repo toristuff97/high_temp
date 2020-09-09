@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import worms from '../assets/worms.jpg';
+import bears from '../assets/bears.jpg';
+import fruit from '../assets/fruit.jpg';
 
  const Candy = () => {
 
     const [candy, setCandy] = useState({ name: "", price: "" });
     const [candies, setCandies] = useState([]);
-    const [candiesId, setCandiesId] = useState([]);
+    const [candyId, setCandyId] = useState([]);
 
 
     const getCandyValue = (i) => {
@@ -14,7 +17,7 @@ import axios from 'axios';
     };
 
     const getCandyId = (i) => {
-        setCandiesId(i.target.value);
+        setCandyId(i.target.value);
     }
 
     async function grabCandy() {
@@ -41,22 +44,13 @@ import axios from 'axios';
 
     async function deleteCandy() {
         try {
-            const res = await axios.delete("http://localhost:5432/hightemp/candy/${candiesId}");
+            const res = await axios.delete(`http://localhost:5432/hightemp/candy/${candyId}`);
             grabCandy();
             console.log(res.data);
         } catch(err) {
             console.error(err, err.message);
         }
     }
-
-//jdbc:postgresql://localhost:5432/high_temp/cakes_and_pies
-    // async function createCandy() {
-    //     console.log("creating cakes and pies yum")
-    //     try {
-    //       const response = await axios.post(
-    //         "jdbc:postgresql://localhost:5432/high_temp/candy",
-    //         candies
-    //       );
 
     useEffect(() => {
         grabCandy();
@@ -72,10 +66,16 @@ import axios from 'axios';
         )
     })
 
-
-
         return (
             <div>
+                <div className="defaultCandy" style={{border: 'white'}}>
+                    {/* <p>This is where candy will show up.</p> */}
+                    <div className='column'>
+                        <img src={worms} className='candyPics'/>
+                        <img src={bears} className='candyPics'/>
+                        <img src={fruit} className='candyPics'/>
+                    </div>
+                </div>
                 <header>
                     <table>
                         <tbody>{candiesTable}</tbody>

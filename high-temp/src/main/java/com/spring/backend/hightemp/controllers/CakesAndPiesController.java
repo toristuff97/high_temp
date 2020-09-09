@@ -17,7 +17,6 @@ public class CakesAndPiesController {
     public Iterable<CakesAndPies> listCakesAndPies() {
         return cakesAndPiesService.listCakesAndPies();
     }
-// @GetMapping("/hightemp/cakes_and_pies")
 
     @PostMapping
     public CakesAndPies createCakesAndPies(@RequestBody CakesAndPies CakesAndPies){

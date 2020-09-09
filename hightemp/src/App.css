@@ -89,7 +89,7 @@ p {
   font-size: 15pt;
   position: relative;
   right: 40vw;
-  top: 13vh;
+  top: 16vh;
 }
 
 .datePick {
@@ -122,6 +122,17 @@ p {
   font-weight: bold;
   width: 7vw;
   height: 7vh;
+}
+
+.candyPics {
+  width: 17vw;
+  height: 27vh;
+  margin-left: 5vw;
+}
+
+.defaultCandy {
+  display: flex;
+  padding-left: 25vw;
 }
 
 @keyframes App-logo-spin {
